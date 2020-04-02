@@ -387,7 +387,7 @@ button{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 768px){
     .line{
         width: 30px;
         height: 5px;
@@ -540,51 +540,66 @@ button{
 
 }
 
-@media screen and (max-width: 411px){
+@media screen and (max-width:500px){
     .text{
        
-        height: 40%;
+        height: 250px;
         
     }
+    nav{
+        position: relative;
+        z-index: 2;
+        display: flex;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 20%;
+        top:20%;
+        transform: translated(-5%, -20%);
+        z-index: 2;
+    }
     .red{
-        top: 55%;
-        height: 50%;
+        top: 300px;
+        height: 450px;
     }
     .down{
-        top: 100%;
+        top: 700px;
     }
     .intro{
-        top: 150%;
-        height: 90%;
+        top: 1140px;
+        height: 860px;
+        
     }
     .education{
-        top: 205%
+        top: 1600px;
     }
     .education-content{
-        top: 240%;
+        top: 1820px;
     }
     .skills{
-        top: 280%;
+        top: 2120px;
     }
     .skills-content{
-        top: 323%;
-        height: 85%;
+        top: 2400px;
+        height: 600px;
     }
     .project{
-        top: 375%
+        top: 2760px
     }
     .project-content{
-        top: 385%;
-        height: 20%;
+        top: 2960px;
+        height: 400px
     }
     .contact{
-        top: 405%
+        top: 2990px;
     }
     .contact-content{
-        top:435%
+        top:3190px
     }
     .down1{
-        top: 500%
+        top: 3400px
     }
 }
 
