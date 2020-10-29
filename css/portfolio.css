@@ -10,7 +10,18 @@ nav{
     position: relative;
     overflow: hidden
 }
-
+.header{
+    
+    display: inline-block;
+}
+.header2{
+    margin-top:2%;
+   
+    display: inline-block;
+    float: right;
+    margin-right:10%;
+   
+}
 .nav-links{
     display: flex;
     list-style: none;
@@ -27,11 +38,13 @@ nav{
     cursor: pointer;
     color:black;
     font-size:25px;
+    
 }
 .nav-links li a{
     color: white;
     text-decoration: none;
     font-size: 16px;
+    margin:4px;
     
     
 }
@@ -414,14 +427,20 @@ button{
     }
 }
 /* for mobiles screen */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
     
    #navbar{
        width:100wh;
    }
    .hone{
        display: hidden;
-       font-size:0px;
+       font-size:40px;
+       text-align: justify;
+   }
+   .header{
+       width:100%;
+       position: sticky;
+       top:0;
    }
    .parallax-window> data-image-src{
        background-size:cover
@@ -436,17 +455,24 @@ button{
     }
     .nav-links{
         margin-left: 50px;
-        font-size:3px;
+        font-size:0px;
         word-spacing: 10px;
        
     }
-    .navLi >a{
+    .header2{
+        display: none;
+    }
+    /* .navLi a{
         font-size: 5px;
         padding: 5px;
         text-align: justify;
         color: black;
     }
-    
+    .navLi a:hover{
+        cursor: pointer;
+        color:black;
+        font-size:15px;
+    } */
 
     /* .hamburger{
         position: absolute;
@@ -519,11 +545,15 @@ button{
         text-align: center;
         
     }
+    .hello{
+        font-size:30px;
+    }
     .aboutmep{
         text-align: center;
         margin-left:0%;
         margin-top: 10%;
-        color:black
+        color:black;
+        font-size:20px;
     }
     .down{
         top:135%;
